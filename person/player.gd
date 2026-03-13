@@ -20,9 +20,11 @@ func _process(delta: float) -> void:
 		$animaco.flip_h = true
 	elif Input.is_action_pressed("cima"):
 		situationAtual = "idleC"
+		$animaco.flip_h = false
 		$animaco.play("runC")
 	elif Input.is_action_pressed("baixo"):
 		situationAtual = "idle"
+		$animaco.flip_h = false
 		$animaco.play("runB")
 	else:
 		$animaco.play(situationAtual)
