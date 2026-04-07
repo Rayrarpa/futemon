@@ -10,6 +10,9 @@ func _process(delta: float) -> void:
 	
 	velocity = direction * VELOCIDADE
 	
+	if Input.is_action_pressed("sair"):
+		get_tree().change_scene_to_file("res://scenes/menu_start.tscn")
+	
 	if Input.is_action_pressed("direita"):
 		situationAtual = "idleL"
 		$animaco.play("run")
