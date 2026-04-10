@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://da6ekkmkwxm2o"]
+
+[ext_resource type="Texture2D" uid="uid://be74uirbqh2gs" path="res://sprites/Cenario/battle.webp" id="1_dn72j"]
+
+[node name="Battle" type="Node2D" unique_id=2071615911]
+
+[node name="BG" type="Sprite2D" parent="." unique_id=330021327]
+position = Vector2(577.5, 426)
+scale = Vector2(1.5387701, 1.5142857)
+texture = ExtResource("1_dn72j")
