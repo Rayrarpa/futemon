@@ -52,10 +52,6 @@ region = Rect2(0, 0, 96, 192)
 atlas = ExtResource("6_ihile")
 region = Rect2(96, 0, 96, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nbgk5"]
-atlas = ExtResource("6_ihile")
-region = Rect2(0, 0, 96, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_13a6j"]
 atlas = ExtResource("6_ihile")
 region = Rect2(192, 0, 96, 192)
@@ -63,6 +59,10 @@ region = Rect2(192, 0, 96, 192)
 [sub_resource type="AtlasTexture" id="AtlasTexture_5wvps"]
 atlas = ExtResource("6_ihile")
 region = Rect2(288, 0, 96, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbgk5"]
+atlas = ExtResource("6_ihile")
+region = Rect2(0, 0, 96, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4qtm1"]
 atlas = ExtResource("7_pu3in")
@@ -72,13 +72,13 @@ region = Rect2(96, 0, 96, 192)
 atlas = ExtResource("7_pu3in")
 region = Rect2(0, 0, 96, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vxh1x"]
-atlas = ExtResource("7_pu3in")
-region = Rect2(192, 0, 96, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ow7h"]
 atlas = ExtResource("7_pu3in")
 region = Rect2(288, 0, 96, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxh1x"]
+atlas = ExtResource("7_pu3in")
+region = Rect2(192, 0, 96, 192)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kw35o"]
 animations = [{
@@ -137,13 +137,13 @@ animations = [{
 "texture": SubResource("AtlasTexture_x30tw")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nbgk5")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_13a6j")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5wvps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbgk5")
 }],
 "loop": true,
 "name": &"runB",
@@ -157,10 +157,10 @@ animations = [{
 "texture": SubResource("AtlasTexture_4ojsf")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vxh1x")
+"texture": SubResource("AtlasTexture_4ow7h")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4ow7h")
+"texture": SubResource("AtlasTexture_vxh1x")
 }],
 "loop": true,
 "name": &"runC",
@@ -178,13 +178,16 @@ texture_filter = 1
 position = Vector2(0, -2)
 scale = Vector2(0.11458333, 0.11458333)
 sprite_frames = SubResource("SpriteFrames_kw35o")
-animation = &"runC"
+animation = &"runB"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1747656750]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_4cgrj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1201360535]
-position = Vector2(1, 0)
+rotation = -0.5014508
+skew = 1.569051
 zoom = Vector2(3, 3)
 limit_enabled = false
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
