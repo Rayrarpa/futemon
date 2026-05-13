@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://bmj0siso24i68" path="res://sprites/Cenario/gramaEscura.png" id="6_wse8f"]
 [ext_resource type="Texture2D" uid="uid://dev4d04bp1ctw" path="res://sprites/Cenario/Arvorezinha.png" id="7_ic0uy"]
 [ext_resource type="Texture2D" uid="uid://betyb4eqxhd0t" path="res://sprites/Cenario/Arvorezona.png" id="8_k3n1d"]
+[ext_resource type="Texture2D" uid="uid://bc6tamosj1l10" path="res://sprites/Cenario/Tijolin.png" id="9_wse8f"]
+[ext_resource type="PackedScene" uid="uid://dsaobkia0n4j" path="res://person/bush.tscn" id="11_ic0uy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlwt5"]
 texture = ExtResource("1_fj7yv")
@@ -926,6 +928,19 @@ texture_region_size = Vector2i(288, 288)
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ic0uy"]
+texture = ExtResource("9_wse8f")
+texture_region_size = Vector2i(96, 96)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_aqk2v"]
 tile_size = Vector2i(96, 96)
 sources/0 = SubResource("TileSetAtlasSource_tlwt5")
@@ -936,6 +951,7 @@ sources/4 = SubResource("TileSetAtlasSource_2o6r5")
 sources/5 = SubResource("TileSetAtlasSource_70uel")
 sources/6 = SubResource("TileSetAtlasSource_hiqwa")
 sources/7 = SubResource("TileSetAtlasSource_2u3nc")
+sources/8 = SubResource("TileSetAtlasSource_ic0uy")
 
 [node name="World" type="Node2D" unique_id=2020764003]
 
@@ -966,7 +982,34 @@ scale = Vector2(0.352, 0.352)
 tile_map_data = PackedByteArray("AAAFAAgABgAAAAAAAAAJAAgABgAAAAAAAAADAAEABwAAAAAAAAADAAIABwAAAAAAAAADAAQABwAAAAAAAAADAAMABwAAAAAAAAADAAUABwAAAAAAAAADAAYABwAAAAAAAAADAAcABwAAAAAAAAADAAgABwAAAAAAAAADAAkABwAAAAAAAAADAAoABwAAAAAAAAADAAsABwAAAAAAAAAEAAsABwAAAAAAAAAFAAsABwAAAAAAAAAGAAsABwAAAAAAAAAHAAsABwAAAAAAAAAIAAsABwAAAAAAAAAJAAsABwAAAAAAAAAKAAsABwAAAAAAAAALAAsABwAAAAAAAAALAAoABwAAAAAAAAALAAkABwAAAAAAAAALAAgABwAAAAAAAAALAAcABwAAAAAAAAALAAYABwAAAAAAAAALAAUABwAAAAAAAAALAAQABwAAAAAAAAALAAMABwAAAAAAAAALAAIABwAAAAAAAAALAAEABwAAAAAAAAADAAwABwAAAAAAAAAEAAwABwAAAAAAAAAFAAwABwAAAAAAAAAGAAwABwAAAAAAAAAHAAwABwAAAAAAAAAIAAwABwAAAAAAAAAJAAwABwAAAAAAAAAKAAwABwAAAAAAAAALAAwABwAAAAAAAAA=")
 tile_set = SubResource("TileSet_aqk2v")
 
+[node name="spawner" type="TileMapLayer" parent="." unique_id=354397692]
+z_index = 3
+texture_filter = 1
+scale = Vector2(0.352, 0.352)
+tile_map_data = PackedByteArray("AAAFAAgABgAAAAAAAAAJAAgABgAAAAAAAAADAAEABwAAAAAAAAADAAIABwAAAAAAAAADAAQABwAAAAAAAAADAAMABwAAAAAAAAADAAUABwAAAAAAAAADAAYABwAAAAAAAAADAAcABwAAAAAAAAADAAgABwAAAAAAAAADAAkABwAAAAAAAAADAAoABwAAAAAAAAADAAsABwAAAAAAAAAEAAsABwAAAAAAAAAFAAsABwAAAAAAAAAGAAsABwAAAAAAAAAHAAsABwAAAAAAAAAIAAsABwAAAAAAAAAJAAsABwAAAAAAAAAKAAsABwAAAAAAAAALAAsABwAAAAAAAAALAAoABwAAAAAAAAALAAkABwAAAAAAAAALAAgABwAAAAAAAAALAAcABwAAAAAAAAALAAYABwAAAAAAAAALAAUABwAAAAAAAAALAAQABwAAAAAAAAALAAMABwAAAAAAAAALAAIABwAAAAAAAAALAAEABwAAAAAAAAADAAwABwAAAAAAAAAEAAwABwAAAAAAAAAFAAwABwAAAAAAAAAGAAwABwAAAAAAAAAHAAwABwAAAAAAAAAIAAwABwAAAAAAAAAJAAwABwAAAAAAAAAKAAwABwAAAAAAAAALAAwABwAAAAAAAAA=")
+tile_set = SubResource("TileSet_aqk2v")
+
 [node name="Player" parent="." unique_id=1550785553 instance=ExtResource("1_f3sb7")]
 z_index = 4096
-position = Vector2(269, 154)
+position = Vector2(566, -106.99997)
 scale = Vector2(2.5, 2.5)
+
+[node name="Area2D" parent="." unique_id=1769287671 instance=ExtResource("11_ic0uy")]
+position = Vector2(621, -127)
+scale = Vector2(0.3, 0.3)
+
+[node name="Area2D2" parent="." unique_id=1374312733 instance=ExtResource("11_ic0uy")]
+position = Vector2(647, -127)
+scale = Vector2(0.3, 0.3)
+
+[node name="Area2D3" parent="." unique_id=773804314 instance=ExtResource("11_ic0uy")]
+position = Vector2(675, -127)
+scale = Vector2(0.3, 0.3)
+
+[node name="Area2D4" parent="." unique_id=196416127 instance=ExtResource("11_ic0uy")]
+position = Vector2(703, -127)
+scale = Vector2(0.3, 0.3)
+
+[node name="Area2D5" parent="." unique_id=1868703353 instance=ExtResource("11_ic0uy")]
+position = Vector2(730, -127)
+scale = Vector2(0.3, 0.3)
