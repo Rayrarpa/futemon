@@ -994,22 +994,42 @@ z_index = 4096
 position = Vector2(566, -106.99997)
 scale = Vector2(2.5, 2.5)
 
-[node name="Area2D" parent="." unique_id=1769287671 instance=ExtResource("11_ic0uy")]
-position = Vector2(621, -127)
-scale = Vector2(0.3, 0.3)
+[node name="Matos" type="Node2D" parent="." unique_id=283701618]
+position = Vector2(626, -151)
+metadata/_edit_group_ = true
 
-[node name="Area2D2" parent="." unique_id=1374312733 instance=ExtResource("11_ic0uy")]
-position = Vector2(647, -127)
-scale = Vector2(0.3, 0.3)
+[node name="Bush" parent="Matos" unique_id=1769287671 instance=ExtResource("11_ic0uy")]
+position = Vector2(-17.999992, 26)
+scale = Vector2(0.2, 0.2)
 
-[node name="Area2D3" parent="." unique_id=773804314 instance=ExtResource("11_ic0uy")]
-position = Vector2(675, -127)
-scale = Vector2(0.3, 0.3)
+[node name="Bush5" parent="Matos" unique_id=1949010021 instance=ExtResource("11_ic0uy")]
+position = Vector2(9.999998, 53.999996)
+scale = Vector2(0.2, 0.2)
 
-[node name="Area2D4" parent="." unique_id=196416127 instance=ExtResource("11_ic0uy")]
-position = Vector2(703, -127)
-scale = Vector2(0.3, 0.3)
+[node name="Bush6" parent="Matos" unique_id=292364380 instance=ExtResource("11_ic0uy")]
+position = Vector2(-4, 53.999996)
+scale = Vector2(0.2, 0.2)
 
-[node name="Area2D5" parent="." unique_id=1868703353 instance=ExtResource("11_ic0uy")]
-position = Vector2(730, -127)
-scale = Vector2(0.3, 0.3)
+[node name="Bush7" parent="Matos" unique_id=1160377677 instance=ExtResource("11_ic0uy")]
+position = Vector2(-17.999998, 53.999996)
+scale = Vector2(0.2, 0.2)
+
+[node name="Bush8" parent="Matos" unique_id=323823243 instance=ExtResource("11_ic0uy")]
+position = Vector2(9.999998, 40)
+scale = Vector2(0.2, 0.2)
+
+[node name="Bush9" parent="Matos" unique_id=1590832883 instance=ExtResource("11_ic0uy")]
+position = Vector2(-18, 39.999996)
+scale = Vector2(0.2, 0.2)
+
+[node name="Bush2" parent="Matos" unique_id=333774191 instance=ExtResource("11_ic0uy")]
+position = Vector2(-4, 40)
+scale = Vector2(0.2, 0.2)
+
+[node name="Bush3" parent="Matos" unique_id=1521999850 instance=ExtResource("11_ic0uy")]
+position = Vector2(10, 25.999998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Bush4" parent="Matos" unique_id=1381415586 instance=ExtResource("11_ic0uy")]
+position = Vector2(-4.0000014, 26.000006)
+scale = Vector2(0.2, 0.2)

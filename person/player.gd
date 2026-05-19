@@ -26,7 +26,7 @@ func tentar_encontro():
 
 		if roll < mato.chance_encontro:
 
-			get_tree().change_scene_to_file(
+			SceneTransition.change_scene(
 				"res://scenes/battle.tscn"
 			)
 

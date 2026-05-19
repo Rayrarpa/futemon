@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var chance_encontro := 0.1 # 10%
+@export var chance_encontro := 0.001 # 10%
 
 var player_dentro = false
 
