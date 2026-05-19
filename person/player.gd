@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const VELOCIDADE = 200
+var VELOCIDADE = 200
 
 var situationAtual = "idle"
 
@@ -22,9 +22,10 @@ func tentar_encontro():
 
 	for mato in matos:
 
-		var roll = randi() % 100
+		var roll = randi() % 400
 
 		if roll < mato.chance_encontro:
+			VELOCIDADE = 0
 
 			SceneTransition.change_scene(
 				"res://scenes/battle.tscn"
