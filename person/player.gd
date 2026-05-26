@@ -4,6 +4,11 @@ var VELOCIDADE = 200
 
 var situationAtual = "idle"
 
+const title_size = 32
+var moving = false
+var input_dir
+var podeAndar = 1
+
 var matos = []
 
 func _ready():
@@ -25,7 +30,7 @@ func tentar_encontro():
 		var roll = randi() % 400
 
 		if roll < mato.chance_encontro:
-			VELOCIDADE = 0
+			podeAndar = 0
 
 			SceneTransition.change_scene(
 				"res://scenes/battle.tscn"
@@ -34,32 +39,72 @@ func tentar_encontro():
 			return
 
 func _process(delta: float) -> void:
-	var direction = Input.get_vector("esquerda", "direita", "cima", "baixo")
-	
-	velocity = direction * VELOCIDADE
-	
+
 	if Input.is_action_pressed("sair"):
 		get_tree().change_scene_to_file("res://scenes/menu_start.tscn")
-	
-	if Input.is_action_pressed("direita"):
-		situationAtual = "idleL"
-		$animaco.play("run")
-		$animaco.flip_h = false
-	elif Input.is_action_pressed("esquerda"):
-		situationAtual = "idleL"
-		$animaco.play("run")
-		$animaco.flip_h = true
-	elif Input.is_action_pressed("cima"):
-		situationAtual = "idleC"
-		$animaco.flip_h = false
-		$animaco.play("runC")
-	elif Input.is_action_pressed("baixo"):
-		situationAtual = "idle"
-		$animaco.flip_h = false
-		$animaco.play("runB")
+
+	if podeAndar == 1:
+
+		# impede novos movimentos enquanto anda
+		if moving:
+			return
+
+		input_dir = Vector2.ZERO
+
+		if Input.is_action_pressed("direita"):
+			input_dir = Vector2(1,0)
+			situationAtual = "idleL"
+			$animaco.flip_h = false
+			$animaco.play("run")
+			move()
+
+		elif Input.is_action_pressed("esquerda"):
+			input_dir = Vector2(-1,0)
+			situationAtual = "idleL"
+			$animaco.flip_h = true
+			$animaco.play("run")
+			move()
+
+		elif Input.is_action_pressed("cima"):
+			input_dir = Vector2(0,-1)
+			situationAtual = "idleC"
+			$animaco.flip_h = false
+			$animaco.play("runC")
+			move()
+
+		elif Input.is_action_pressed("baixo"):
+			input_dir = Vector2(0,1)
+			situationAtual = "idle"
+			$animaco.flip_h = false
+			$animaco.play("runB")
+			move()
+
+		else:
+			$animaco.play(situationAtual)
+
 	else:
-		$animaco.play(situationAtual)
-	
-	move_and_slide()
-	if direction != Vector2.ZERO:
+		$animaco.play("idle")
+
+
+func move():
+
+	if input_dir != Vector2.ZERO:
+
+		moving = true
+
+		var tween = create_tween()
+
+		tween.tween_property(
+			self,
+			"position",
+			position + input_dir * title_size,
+			0.2
+		)
+
+		tween.tween_callback(move_false)
+
 		tentar_encontro()
+
+
+func move_false():
+	moving = false
