@@ -27,7 +27,7 @@ func tentar_encontro():
 
 	for mato in matos:
 
-		var roll = randi() % 400
+		var roll = randi() % 100
 
 		if roll < mato.chance_encontro:
 			podeAndar = 0
