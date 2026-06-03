@@ -49,8 +49,8 @@ script = ExtResource("1_ccu5i")
 
 [node name="Panel" type="Panel" parent="." unique_id=342155554]
 layout_mode = 0
-offset_right = 1153.0
-offset_bottom = 654.0
+offset_right = 1278.1727
+offset_bottom = 725.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_tc6ix")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1875475800]
@@ -61,9 +61,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -171.0
-offset_top = -7.25
+offset_top = -29.25
 offset_right = 171.0
-offset_bottom = 203.25
+offset_bottom = 181.25
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 6
@@ -114,9 +114,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -201.0
-offset_top = 55.0
+offset_top = 119.0
 offset_right = 202.0
-offset_bottom = 209.0
+offset_bottom = 273.0
 grow_horizontal = 2
 text = "FUTEMON"
 label_settings = SubResource("LabelSettings_cp8n1")

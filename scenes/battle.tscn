@@ -6,6 +6,6 @@
 
 [node name="BG" type="Sprite2D" parent="." unique_id=330021327]
 texture_filter = 1
-position = Vector2(543, 323)
-scale = Vector2(1.1704088, 1.1517857)
+position = Vector2(580.50006, 323.25003)
+scale = Vector2(1.5387702, 1.150893)
 texture = ExtResource("1_dn72j")

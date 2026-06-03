@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dsaobkia0n4j"]
 
 [ext_resource type="Script" uid="uid://bx8t771tceh4s" path="res://bush.gd" id="1_hd4iq"]
-[ext_resource type="Texture2D" uid="uid://d2p4lkspvflt4" path="res://sprites/Cenario/batata.png" id="2_sruu1"]
+[ext_resource type="Texture2D" uid="uid://bodqfquectvsj" path="res://sprites/Cenario/matoAAAAA.png" id="2_hd4iq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjrdm"]
 size = Vector2(64, 66)
@@ -11,8 +11,9 @@ script = ExtResource("1_hd4iq")
 
 [node name="Spriteaa2D" type="Sprite2D" parent="." unique_id=907828469]
 texture_filter = 1
-scale = Vector2(0.16666661, 0.16666661)
-texture = ExtResource("2_sruu1")
+position = Vector2(0, -7.9999995)
+scale = Vector2(4.7395835, 4.7395835)
+texture = ExtResource("2_hd4iq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=6854561]
 position = Vector2(0, -3)
