@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://xebp7gqm6ufl"]
 
+[ext_resource type="Script" uid="uid://cbgd5hxi6420y" path="res://scripts/menu.gd" id="1_mhnvy"]
 [ext_resource type="Texture2D" uid="uid://c4qhadqcxvyek" path="res://sprites/Inventory/InventoryRect.png" id="1_yqeox"]
 [ext_resource type="FontFile" uid="uid://db377vhd2sd2x" path="res://sprites/fonts/pokemon_pixel_font.ttf" id="2_vjb58"]
+[ext_resource type="Texture2D" uid="uid://bdsh0fn44lc4d" path="res://sprites/Inventory/bill.png" id="4_4ytvr"]
 
 [sub_resource type="FontVariation" id="FontVariation_con2f"]
 base_font = ExtResource("2_vjb58")
 
 [node name="Menu" type="CanvasLayer" unique_id=342042241]
+script = ExtResource("1_mhnvy")
 
 [node name="Control" type="Control" parent="." unique_id=394624057]
 layout_mode = 3
@@ -41,33 +44,17 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/normal_font = SubResource("FontVariation_con2f")
 theme_override_font_sizes/normal_font_size = 70
-text = "TIME"
+text = "Time"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Control/NinePatchRect" unique_id=319870563]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 87.0
-offset_right = 268.0
-offset_bottom = 157.0
-metadata/_edit_group_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer2" unique_id=2066198303]
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer" unique_id=2066198303]
 custom_minimum_size = Vector2(200, 70)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/normal_font = SubResource("FontVariation_con2f")
 theme_override_font_sizes/normal_font_size = 70
-text = "MOCHILA"
+text = "Mochila"
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="Control/NinePatchRect" unique_id=1124248286]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 160.0
-offset_right = 268.0
-offset_bottom = 230.0
-metadata/_edit_group_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer3" unique_id=1870003692]
+[node name="RichTextLabel3" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer" unique_id=1870003692]
 custom_minimum_size = Vector2(200, 70)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -75,34 +62,29 @@ theme_override_fonts/normal_font = SubResource("FontVariation_con2f")
 theme_override_font_sizes/normal_font_size = 70
 text = "Milena"
 
-[node name="VBoxContainer4" type="VBoxContainer" parent="Control/NinePatchRect" unique_id=1603937015]
-layout_mode = 0
-offset_left = 68.0
-offset_top = 235.0
-offset_right = 268.0
-offset_bottom = 305.0
-metadata/_edit_group_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer4" unique_id=889162166]
+[node name="RichTextLabel4" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer" unique_id=889162166]
 custom_minimum_size = Vector2(200, 70)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/normal_font = SubResource("FontVariation_con2f")
 theme_override_font_sizes/normal_font_size = 70
-text = "SALVAR"
+text = "Salvar"
 
-[node name="VBoxContainer5" type="VBoxContainer" parent="Control/NinePatchRect" unique_id=855207718]
-layout_mode = 0
-offset_left = 69.0
-offset_top = 314.0
-offset_right = 269.0
-offset_bottom = 384.0
-metadata/_edit_group_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer5" unique_id=1656000576]
+[node name="RichTextLabel5" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer" unique_id=1656000576]
 custom_minimum_size = Vector2(200, 70)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/normal_font = SubResource("FontVariation_con2f")
 theme_override_font_sizes/normal_font_size = 70
-text = "SAIDA"
+text = "Saida"
+
+[node name="TextureRect" type="TextureRect" parent="Control/NinePatchRect" unique_id=1482310776]
+texture_filter = 1
+layout_mode = 0
+offset_left = 63.0
+offset_top = 38.0
+offset_right = 575.0
+offset_bottom = 550.0
+rotation = 1.5713573
+scale = Vector2(0.09659096, 0.09659096)
+texture = ExtResource("4_4ytvr")

@@ -973,7 +973,7 @@ tile_set = SubResource("TileSet_tnupd")
 z_index = 2
 texture_filter = 1
 scale = Vector2(0.352, 0.352)
-tile_map_data = PackedByteArray("AAAGAAYAAwACAAEAAAAGAAUAAwACAAEAAAAGAAQAAwACAAEAAAAGAAMAAwACAAEAAAAGAAIAAwACAAEAAAAIAAoAAwABAAAAAAAHAAoAAwABAAAAAAAGAAoAAwABAAAAAAAEAAcAAgACAAIAAAAEAAgAAgACAAMAAAAFAAcAAgADAAIAAAAGAAcAAwACAAIAAAAEAAkAAgACAAAAAAAEAAoAAgACAAEAAAAFAAoAAgADAAEAAAAIAAIAAwAAAAEAAAAIAAMAAwAAAAEAAAAIAAQAAwAAAAEAAAAIAAUAAwAAAAEAAAAIAAYAAwAAAAEAAAAIAAcAAwAAAAIAAAAJAAcAAgAAAAIAAAAKAAcAAgABAAIAAAAKAAgAAgABAAMAAAAJAAoAAgAAAAEAAAAKAAkAAgABAAAAAAAKAAoAAgABAAEAAAAJAAIABQAAAAEAAAAJAAMABQAAAAEAAAAJAAQABQAAAAEAAAAKAAQABQABAAEAAAAKAAUABQABAAEAAAAKAAYABAAAAAIAAAAJAAYABQAAAAIAAAAJAAUABQAAAAEAAAAKAAMABQABAAEAAAAKAAIABQABAAEAAAAMAAMABQABAAEAAAALAAMABQABAAEAAAALAAQABQABAAEAAAALAAUABQABAAEAAAALAAYABAABAAIAAAALAAIABQABAAEAAAAMAAIABQABAAEAAAAMAAQABQABAAEAAAAMAAUABQABAAEAAAAMAAYABQABAAEAAAANAAIABQABAAEAAAANAAMABQABAAEAAAANAAQABQABAAEAAAANAAUABQABAAEAAAANAAYABQABAAEAAAANAAEABQABAAEAAAAMAAEABQABAAEAAAALAAEABQABAAEAAAAJAAEABQABAAEAAAAKAAEABQABAAEAAAAIAAEABQABAAEAAAAHAAEABQABAAEAAAAGAAEABQABAAEAAAAFAAEABQABAAEAAAAEAAEABQABAAEAAAADAAEABQABAAEAAAACAAEABQABAAEAAAACAAcABQABAAEAAAADAAcABAACAAMAAAABAAYABQABAAEAAAABAAUABQABAAEAAAABAAQABQABAAEAAAABAAMABQABAAEAAAABAAIABQABAAEAAAABAAcABQABAAEAAAABAAgABQABAAEAAAACAAgABQABAAEAAAACAAkABQABAAEAAAADAAgABQACAAEAAAAFAAYABQACAAIAAAAEAAYABAADAAIAAAADAAYABAACAAIAAAACAAYABQABAAEAAAAFAAUABQACAAEAAAAFAAQABQACAAEAAAAFAAMABQACAAEAAAAFAAIABQACAAEAAAADAAkABQACAAEAAAADAAoABAACAAAAAAADAAsABAACAAEAAAAEAAsABAADAAEAAAAFAAsABQABAAAAAAAGAAsABQABAAAAAAAHAAsABQABAAAAAAAIAAsABQABAAAAAAAJAAsABQABAAAAAAAKAAsABAAAAAEAAAALAAoABAABAAAAAAALAAsABAABAAEAAAALAAgABQAAAAEAAAALAAkABQAAAAEAAAALAAcABAABAAMAAAAMAAcABQABAAEAAAAMAAgABQABAAEAAAAMAAkABQABAAEAAAAMAAoABQABAAEAAAAMAAsABQABAAEAAAANAAoABQABAAEAAAANAAkABQABAAEAAAANAAgABQABAAEAAAANAAcABQABAAEAAAANAAsABQABAAEAAAANAAwABQABAAEAAAAMAAwABQABAAEAAAALAAwABQABAAEAAAAKAAwABQABAAEAAAAJAAwABQABAAEAAAAIAAwABQABAAEAAAAHAAwABQABAAEAAAAGAAwABQABAAEAAAAFAAwABQABAAEAAAAEAAwABQABAAEAAAADAAwABQABAAEAAAACAAwABQABAAEAAAABAAwABQABAAEAAAABAAsABQABAAEAAAABAAoABQABAAEAAAABAAkABQABAAEAAAACAAoABQABAAEAAAACAAsABQABAAEAAAACAAUABQABAAEAAAACAAIABQABAAEAAAACAAMABQABAAEAAAACAAQABQABAAEAAAADAAIABQABAAEAAAAEAAIABQABAAEAAAAEAAMABQABAAEAAAAEAAQABQABAAEAAAADAAUABQABAAEAAAADAAQABQABAAEAAAAEAAUABQABAAEAAAADAAMABQABAAEAAAA=")
+tile_map_data = PackedByteArray("AAAGAAYAAwACAAEAAAAGAAUAAwACAAEAAAAGAAQAAwACAAEAAAAGAAMAAwACAAEAAAAGAAIAAwACAAEAAAAIAAoAAwABAAAAAAAHAAoAAwABAAAAAAAGAAoAAwABAAAAAAAEAAcAAgACAAIAAAAEAAgAAgACAAMAAAAFAAcAAgADAAIAAAAGAAcAAwACAAIAAAAEAAkAAgACAAAAAAAEAAoAAgACAAEAAAAFAAoAAgADAAEAAAAIAAIAAwAAAAEAAAAIAAMAAwAAAAEAAAAIAAQAAwAAAAEAAAAIAAUAAwAAAAEAAAAIAAYAAwAAAAEAAAAIAAcAAwAAAAIAAAAJAAcAAgAAAAIAAAAKAAcAAgABAAIAAAAKAAgAAgABAAMAAAAJAAoAAgAAAAEAAAAKAAkAAgABAAAAAAAKAAoAAgABAAEAAAAJAAIABQAAAAEAAAAJAAMABQAAAAEAAAAJAAQABQAAAAEAAAAKAAQABQABAAEAAAAKAAUABQABAAEAAAAKAAYABAAAAAIAAAAJAAYABQAAAAIAAAAJAAUABQAAAAEAAAAKAAMABQABAAEAAAAKAAIABQABAAEAAAAMAAMABQABAAEAAAALAAMABQABAAEAAAALAAQABQABAAEAAAALAAUABQABAAEAAAALAAYABAABAAIAAAALAAIABQABAAEAAAAMAAIABQABAAEAAAAMAAQABQABAAEAAAAMAAUABQABAAEAAAAMAAYABQABAAEAAAANAAIABQABAAEAAAANAAMABQABAAEAAAANAAQABQABAAEAAAANAAUABQABAAEAAAANAAYABQABAAEAAAANAAEABQABAAEAAAAMAAEABQABAAEAAAALAAEABQABAAEAAAAJAAEABQABAAEAAAAKAAEABQABAAEAAAAIAAEABQABAAEAAAAHAAEABQABAAEAAAAGAAEABQABAAEAAAAFAAEABQABAAEAAAAEAAEABQABAAEAAAADAAEABQABAAEAAAACAAEABQABAAEAAAACAAcABQABAAEAAAADAAcABAACAAMAAAABAAYABQABAAEAAAABAAUABQABAAEAAAABAAQABQABAAEAAAABAAMABQABAAEAAAABAAIABQABAAEAAAABAAcABQABAAEAAAABAAgABQABAAEAAAACAAgABQABAAEAAAACAAkABQABAAEAAAADAAgABQACAAEAAAAFAAYABQACAAIAAAAEAAYABAADAAIAAAADAAYABAACAAIAAAACAAYABQABAAEAAAAFAAUABQACAAEAAAAFAAQABQACAAEAAAAFAAMABQACAAEAAAAFAAIABQACAAEAAAADAAkABQACAAEAAAADAAoABAACAAAAAAADAAsABAACAAEAAAAEAAsABAADAAEAAAAFAAsABQABAAAAAAAGAAsABQABAAAAAAAHAAsABQABAAAAAAAIAAsABQABAAAAAAAJAAsABQABAAAAAAAKAAsABAAAAAEAAAALAAoABAABAAAAAAALAAsABAABAAEAAAALAAgABQAAAAEAAAALAAkABQAAAAEAAAALAAcABAABAAMAAAAMAAcABQABAAEAAAAMAAgABQABAAEAAAAMAAkABQABAAEAAAAMAAoABQABAAEAAAAMAAsABQABAAEAAAANAAoABQABAAEAAAANAAkABQABAAEAAAANAAgABQABAAEAAAANAAcABQABAAEAAAANAAsABQABAAEAAAANAAwABQABAAEAAAAMAAwABQABAAEAAAALAAwABQABAAEAAAAKAAwABQABAAEAAAAJAAwABQABAAEAAAAIAAwABQABAAEAAAAHAAwABQABAAEAAAAGAAwABQABAAEAAAAFAAwABQABAAEAAAAEAAwABQABAAEAAAADAAwABQABAAEAAAACAAwABQABAAEAAAABAAwABQABAAEAAAABAAsABQABAAEAAAABAAoABQABAAEAAAABAAkABQABAAEAAAACAAoABQABAAEAAAACAAsABQABAAEAAAACAAUABQABAAEAAAACAAIABQABAAEAAAACAAMABQABAAEAAAACAAQABQABAAEAAAADAAIABQABAAEAAAAEAAIABQABAAEAAAAEAAMABQABAAEAAAAEAAQABQABAAEAAAADAAUABQABAAEAAAADAAQABQABAAEAAAAEAAUABQABAAEAAAADAAMABQABAAEAAADz/xAABQABAAEAAAD0/xAABQABAAEAAAD1/xAABQABAAEAAAD0/xEABQABAAEAAADz/xEABQABAAEAAAD1/xEABQABAAEAAAD1/xIABQABAAEAAAD0/xIABQABAAEAAADz/xIABQABAAEAAADy/w8ABQAAAAAAAADz/w8ABQABAAAAAAD0/w8ABQABAAAAAAD1/w8ABQABAAAAAAD2/w8ABQACAAAAAAD2/xAABQACAAEAAAD2/xEABQACAAEAAAD2/xIABQACAAEAAAD2/xMABQACAAIAAAD1/xMABQABAAIAAAD0/xMABQABAAIAAADz/xMABQABAAIAAADy/xMABQAAAAIAAADy/xAABQAAAAEAAADy/xEABQAAAAEAAADy/xIABQAAAAEAAAA=")
 tile_set = SubResource("TileSet_tnupd")
 
 [node name="arvore" type="TileMapLayer" parent="." unique_id=1156873324]
@@ -997,211 +997,283 @@ scale = Vector2(1.5, 1.5)
 
 [node name="Bush" parent="Matos" unique_id=1769287671 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.33334, -122.66667)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush5" parent="Matos" unique_id=1594080416 instance=ExtResource("10_rm7ra")]
-position = Vector2(9.999998, 53.999996)
-scale = Vector2(0.2, 0.2)
+position = Vector2(78.66666, 368.66663)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush6" parent="Matos" unique_id=707791812 instance=ExtResource("10_rm7ra")]
-position = Vector2(-4, 53.999996)
-scale = Vector2(0.2, 0.2)
+position = Vector2(64.66666, 368.66663)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush7" parent="Matos" unique_id=1168182366 instance=ExtResource("10_rm7ra")]
-position = Vector2(-17.999998, 53.999996)
-scale = Vector2(0.2, 0.2)
+position = Vector2(50.666656, 368.66663)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush8" parent="Matos" unique_id=1283171784 instance=ExtResource("10_rm7ra")]
-position = Vector2(9.999998, 40)
-scale = Vector2(0.2, 0.2)
+position = Vector2(78.66666, 354.66663)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush9" parent="Matos" unique_id=147928430 instance=ExtResource("10_rm7ra")]
 position = Vector2(-167.33334, -122.66666)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush2" parent="Matos" unique_id=1134739638 instance=ExtResource("10_rm7ra")]
-position = Vector2(-4, 40)
-scale = Vector2(0.2, 0.2)
+position = Vector2(64.66666, 354.66663)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush62" parent="Matos" unique_id=736860784 instance=ExtResource("10_rm7ra")]
+position = Vector2(108.66666, 367.33334)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush63" parent="Matos" unique_id=1837766874 instance=ExtResource("10_rm7ra")]
+position = Vector2(94.66666, 367.33334)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush64" parent="Matos" unique_id=135978425 instance=ExtResource("10_rm7ra")]
+position = Vector2(108.66666, 353.33334)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush65" parent="Matos" unique_id=1700567854 instance=ExtResource("10_rm7ra")]
+position = Vector2(94.66666, 353.33334)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush66" parent="Matos" unique_id=1291170113 instance=ExtResource("10_rm7ra")]
+position = Vector2(109.33332, 400)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush67" parent="Matos" unique_id=656994897 instance=ExtResource("10_rm7ra")]
+position = Vector2(95.33332, 400)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush68" parent="Matos" unique_id=1892808303 instance=ExtResource("10_rm7ra")]
+position = Vector2(109.33332, 386)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush69" parent="Matos" unique_id=1446316183 instance=ExtResource("10_rm7ra")]
+position = Vector2(95.33332, 386)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush52" parent="Matos" unique_id=1323191083 instance=ExtResource("10_rm7ra")]
+position = Vector2(79.99999, 399.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush53" parent="Matos" unique_id=508496247 instance=ExtResource("10_rm7ra")]
+position = Vector2(65.99999, 399.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush54" parent="Matos" unique_id=1044201345 instance=ExtResource("10_rm7ra")]
+position = Vector2(51.99999, 399.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush55" parent="Matos" unique_id=944597226 instance=ExtResource("10_rm7ra")]
+position = Vector2(79.99999, 385.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush56" parent="Matos" unique_id=105891895 instance=ExtResource("10_rm7ra")]
+position = Vector2(65.99999, 385.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush57" parent="Matos" unique_id=1232354040 instance=ExtResource("10_rm7ra")]
+position = Vector2(79.99999, 399.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush58" parent="Matos" unique_id=136077728 instance=ExtResource("10_rm7ra")]
+position = Vector2(65.99999, 399.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush59" parent="Matos" unique_id=596644105 instance=ExtResource("10_rm7ra")]
+position = Vector2(51.99999, 399.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush60" parent="Matos" unique_id=1446320275 instance=ExtResource("10_rm7ra")]
+position = Vector2(79.99999, 385.3333)
+scale = Vector2(0.035, 0.035)
+
+[node name="Bush61" parent="Matos" unique_id=2097591916 instance=ExtResource("10_rm7ra")]
+position = Vector2(65.99999, 385.3333)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush3" parent="Matos" unique_id=1718807931 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.33334, -122.66667)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush4" parent="Matos" unique_id=1414106976 instance=ExtResource("10_rm7ra")]
 position = Vector2(-220.66675, -122.66667)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush10" parent="Matos" unique_id=637661277 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.33327, -108.00001)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush11" parent="Matos" unique_id=1207937479 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.33327, -108.00001)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush12" parent="Matos" unique_id=1778230156 instance=ExtResource("10_rm7ra")]
 position = Vector2(-220.66667, -108.00001)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush13" parent="Matos" unique_id=1825351248 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.33327, -93.33333)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush14" parent="Matos" unique_id=239878575 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.33327, -93.33333)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush15" parent="Matos" unique_id=1245094241 instance=ExtResource("10_rm7ra")]
 position = Vector2(-220.66667, -93.33333)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush16" parent="Matos" unique_id=543533306 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99992, -76.66667)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush17" parent="Matos" unique_id=869207719 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99992, -76.66667)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush18" parent="Matos" unique_id=1334760769 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33333, -76.66667)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush19" parent="Matos" unique_id=180952958 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99985, -62.000008)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush20" parent="Matos" unique_id=641722129 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99985, -62.000008)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush21" parent="Matos" unique_id=1723044594 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33325, -62.000008)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush22" parent="Matos" unique_id=1640082952 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99985, -47.33333)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush23" parent="Matos" unique_id=1124195415 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99985, -47.33333)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush24" parent="Matos" unique_id=890531162 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33325, -47.33333)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush25" parent="Matos" unique_id=805928302 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99992, -32.666664)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush26" parent="Matos" unique_id=244906638 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99992, -32.666664)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush27" parent="Matos" unique_id=724343065 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33333, -32.666664)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush28" parent="Matos" unique_id=293921660 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99985, -18)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush29" parent="Matos" unique_id=1872931934 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99985, -18)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush30" parent="Matos" unique_id=552775559 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33325, -18)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush31" parent="Matos" unique_id=1174896624 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99985, -3.3333206)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush32" parent="Matos" unique_id=997739150 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99985, -3.3333206)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush33" parent="Matos" unique_id=254138030 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33325, -3.3333206)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush34" parent="Matos" unique_id=1135117477 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99992, 11.333336)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush35" parent="Matos" unique_id=2125964292 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99992, 11.333336)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush36" parent="Matos" unique_id=2090206640 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33333, 11.333336)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush37" parent="Matos" unique_id=277875929 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99985, 26)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush38" parent="Matos" unique_id=397168285 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99985, 26)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush39" parent="Matos" unique_id=1862241222 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33325, 26)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush40" parent="Matos" unique_id=573817583 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.99985, 40.66668)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush41" parent="Matos" unique_id=6247088 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.99985, 40.66668)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush42" parent="Matos" unique_id=1456445519 instance=ExtResource("10_rm7ra")]
 position = Vector2(-221.33325, 40.66668)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush43" parent="Matos" unique_id=1541697568 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.33325, 55.333336)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush44" parent="Matos" unique_id=348465298 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.33325, 55.333336)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush45" parent="Matos" unique_id=723943984 instance=ExtResource("10_rm7ra")]
 position = Vector2(-220.66666, 55.333336)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush46" parent="Matos" unique_id=1516515013 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.33318, 70)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush47" parent="Matos" unique_id=1962752868 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.33318, 70)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush48" parent="Matos" unique_id=250600850 instance=ExtResource("10_rm7ra")]
 position = Vector2(-220.66658, 70)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush49" parent="Matos" unique_id=1671250044 instance=ExtResource("10_rm7ra")]
 position = Vector2(-205.33318, 84.66668)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush50" parent="Matos" unique_id=724094370 instance=ExtResource("10_rm7ra")]
 position = Vector2(-189.33318, 84.66668)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Bush51" parent="Matos" unique_id=136598933 instance=ExtResource("10_rm7ra")]
 position = Vector2(-220.66658, 84.66668)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.035, 0.035)
 
 [node name="Player" parent="." unique_id=1550785553 instance=ExtResource("11_0mof3")]
 z_index = 4096
-position = Vector2(-667.9999, -87)
+position = Vector2(-407.00003, 520.99994)
 scale = Vector2(2.5, 2.5)
 
 [node name="Menu" parent="." unique_id=342042241 instance=ExtResource("12_jpxu0")]
