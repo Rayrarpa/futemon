@@ -1,11 +1,26 @@
 [gd_scene format=3 uid="uid://da6ekkmkwxm2o"]
 
-[ext_resource type="Texture2D" uid="uid://c06wvali1rgt5" path="res://sprites/Cenario/battle2.jpg" id="1_dn72j"]
+[ext_resource type="Texture2D" uid="uid://ctg0bbmoadsr6" path="res://sprites/Butoes/battleBackground.png" id="1_dn72j"]
+[ext_resource type="Texture2D" uid="uid://djxplsukjd5qf" path="res://sprites/Butoes/textBox.png" id="2_th188"]
 
 [node name="Battle" type="Node2D" unique_id=2071615911]
 
-[node name="BG" type="Sprite2D" parent="." unique_id=330021327]
+[node name="Background" type="Sprite2D" parent="." unique_id=1649820058]
 texture_filter = 1
-position = Vector2(643.4522, 358.5)
-scale = Vector2(1.7070916, 1.2767857)
+position = Vector2(638.49994, 358.5)
+scale = Vector2(6.120192, 4.951389)
 texture = ExtResource("1_dn72j")
+
+[node name="Battlefield" type="Node2D" parent="." unique_id=1055132031]
+
+[node name="PlayerAnchor" type="Marker2D" parent="Battlefield" unique_id=1367689183]
+
+[node name="EnemyAnchor" type="Marker2D" parent="Battlefield" unique_id=575945126]
+
+[node name="Player" type="Sprite2D" parent="Battlefield" unique_id=1867007547]
+
+[node name="Enemy" type="Sprite2D" parent="Battlefield" unique_id=193458693]
+
+[node name="TextBox" type="Sprite2D" parent="Battlefield" unique_id=1879411232]
+position = Vector2(150, 570)
+texture = ExtResource("2_th188")
