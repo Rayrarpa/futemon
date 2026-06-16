@@ -18,11 +18,15 @@ func _unhandled_input(event):
 			if event.is_action_pressed("menu"):
 				menu.visible = true
 				screen_loaded = ScreenLoaded.JUST_MENU
+				selected_option = 0
+				select_arrow.position.y = 10
+				
 		
 		ScreenLoaded.JUST_MENU:
 			if event.is_action_pressed("ataque") or event.is_action_pressed("menu"):
 				menu.visible = false
 				screen_loaded = ScreenLoaded.NOTHING
+				selected_option = 0
 			elif event.is_action_pressed("down"):
 				selected_option += 1
 				select_arrow.position.y = 5 + (selected_option % 5) * 77
