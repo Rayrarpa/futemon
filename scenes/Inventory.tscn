@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://chb38ly1s16ed" path="res://scripts/inventory.gd" id="1_elp5n"]
 [ext_resource type="Texture2D" uid="uid://c6jvwghqs5daf" path="res://sprites/Inventory/Sample-InventorySlotsSet.png" id="1_kh8if"]
+[ext_resource type="Texture2D" uid="uid://doeuvvpmsraye" path="res://sprites/Inventory/hotbar_selector.png" id="3_njucy"]
+[ext_resource type="Texture2D" uid="uid://bdsh0fn44lc4d" path="res://sprites/Inventory/bill.png" id="4_7uqmy"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1132434581 groups=["Inventory", "Inventoryy"]]
 script = ExtResource("1_elp5n")
@@ -15,9 +17,98 @@ offset_bottom = 40.0
 [node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=485910287]
 texture_filter = 1
 layout_mode = 0
-offset_left = 98.0
+offset_left = 169.0
 offset_top = 39.0
-offset_right = 179.0
-offset_bottom = 120.0
+offset_right = 405.0
+offset_bottom = 275.0
 texture = ExtResource("1_kh8if")
 region_rect = Rect2(27.569416, -0.19333744, 75.64844, 74.93241)
+
+[node name="TextureRect" type="TextureRect" parent="Control/NinePatchRect" unique_id=1144983486]
+texture_filter = 1
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 68.0
+offset_bottom = 67.0
+texture = ExtResource("3_njucy")
+
+[node name="Bill" type="Sprite2D" parent="Control/NinePatchRect" unique_id=209171615]
+position = Vector2(39, 38)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill2" type="Sprite2D" parent="Control/NinePatchRect" unique_id=1998935843]
+position = Vector2(91, 38)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill3" type="Sprite2D" parent="Control/NinePatchRect" unique_id=1812075450]
+position = Vector2(146, 38)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill4" type="Sprite2D" parent="Control/NinePatchRect" unique_id=770039229]
+position = Vector2(198, 38)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill5" type="Sprite2D" parent="Control/NinePatchRect" unique_id=576387280]
+position = Vector2(39, 90.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill6" type="Sprite2D" parent="Control/NinePatchRect" unique_id=124599992]
+position = Vector2(91, 90.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill7" type="Sprite2D" parent="Control/NinePatchRect" unique_id=1419152338]
+position = Vector2(146, 90.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill8" type="Sprite2D" parent="Control/NinePatchRect" unique_id=747710408]
+position = Vector2(198, 90.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill9" type="Sprite2D" parent="Control/NinePatchRect" unique_id=1743685056]
+position = Vector2(39, 144.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill10" type="Sprite2D" parent="Control/NinePatchRect" unique_id=545732878]
+position = Vector2(91, 144.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill11" type="Sprite2D" parent="Control/NinePatchRect" unique_id=1800416585]
+position = Vector2(146, 144.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill12" type="Sprite2D" parent="Control/NinePatchRect" unique_id=577636136]
+position = Vector2(198, 144.99997)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill13" type="Sprite2D" parent="Control/NinePatchRect" unique_id=243462497]
+position = Vector2(39, 198.99998)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill14" type="Sprite2D" parent="Control/NinePatchRect" unique_id=615940299]
+position = Vector2(91, 198.99998)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill15" type="Sprite2D" parent="Control/NinePatchRect" unique_id=860917685]
+position = Vector2(146, 198.99998)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")
+
+[node name="Bill16" type="Sprite2D" parent="Control/NinePatchRect" unique_id=326015980]
+position = Vector2(198, 198.99998)
+scale = Vector2(0.087890655, 0.087890655)
+texture = ExtResource("4_7uqmy")

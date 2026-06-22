@@ -8,6 +8,7 @@ enum ScreenLoaded {NOTHING, JUST_MENU, PARTY_SCREEN }
 var screen_loaded = ScreenLoaded.NOTHING
 
 var selected_option: int = 0
+var inv_selected: int = 0
 
 func _ready() -> void:
 	menu.visible = false
@@ -26,19 +27,22 @@ func _unhandled_input(event):
 				menu.visible = true
 				screen_loaded = ScreenLoaded.JUST_MENU
 				selected_option = 0
-				select_arrow.position.y = 10
+				select_arrow.position.y = 5
 				
 		
 		ScreenLoaded.JUST_MENU:
-			if event.is_action_pressed("ataque") or event.is_action_pressed("menu"):
+			if event.is_action_pressed("menu"):
 				var player = get_tree().get_first_node_in_group("player")
 				player.set_process(true)
 				menu.visible = false
 				screen_loaded = ScreenLoaded.NOTHING
 				selected_option = 0
+			elif event.is_action_pressed("ataque") and select_arrow.position.y == 5:
+				screen_loaded = ScreenLoaded.PARTY_SCREEN
 			elif event.is_action_pressed("down"):
 				selected_option += 1
 				select_arrow.position.y = 5 + (selected_option % 5) * 77
+				print(select_arrow.position.y)
 			elif event.is_action_pressed("up"):
 				if selected_option == 0:
 					selected_option = 5
@@ -47,6 +51,16 @@ func _unhandled_input(event):
 				select_arrow.position.y = 5 + (selected_option % 5) * 77
 		
 		ScreenLoaded.PARTY_SCREEN:
-			select_arrow.visible = false
 			var inventory = get_tree().get_first_node_in_group("Inventory")
 			inventory.get_node("Control").visible = true
+			select_arrow.visible = false
+			var arrow_inv = inventory.get_node("Control/NinePatchRect/TextureRect")
+			
+			if event.is_action_pressed("down"):
+				arrow_inv.position.y += 54
+			elif event.is_action_pressed("up"):
+				arrow_inv.position.y -= 54
+			if event.is_action_pressed("voltar"):
+				inventory.visible = false
+				select_arrow.visible = true
+				screen_loaded = ScreenLoaded.JUST_MENU
