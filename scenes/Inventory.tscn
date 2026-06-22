@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cowkk0ukxb8fl"]
+
+[ext_resource type="Script" uid="uid://chb38ly1s16ed" path="res://scripts/inventory.gd" id="1_elp5n"]
+[ext_resource type="Texture2D" uid="uid://c6jvwghqs5daf" path="res://sprites/Inventory/Sample-InventorySlotsSet.png" id="1_kh8if"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1132434581 groups=["Inventory", "Inventoryy"]]
+script = ExtResource("1_elp5n")
+
+[node name="Control" type="Control" parent="." unique_id=1882953546]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=485910287]
+texture_filter = 1
+layout_mode = 0
+offset_left = 98.0
+offset_top = 39.0
+offset_right = 179.0
+offset_bottom = 120.0
+texture = ExtResource("1_kh8if")
+region_rect = Rect2(27.569416, -0.19333744, 75.64844, 74.93241)

@@ -3,6 +3,7 @@ extends CanvasLayer
 @onready var select_arrow = $Control/NinePatchRect/TextureRect
 @onready var menu = $Control
 
+
 enum ScreenLoaded {NOTHING, JUST_MENU, PARTY_SCREEN }
 var screen_loaded = ScreenLoaded.NOTHING
 
@@ -46,4 +47,6 @@ func _unhandled_input(event):
 				select_arrow.position.y = 5 + (selected_option % 5) * 77
 		
 		ScreenLoaded.PARTY_SCREEN:
-			pass
+			select_arrow.visible = false
+			var inventory = get_tree().get_first_node_in_group("Inventory")
+			inventory.get_node("Control").visible = true

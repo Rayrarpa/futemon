@@ -24,6 +24,10 @@ SceneTransition="*uid://b40ux27uaqtn8"
 window/size/viewport_width=720
 window/size/viewport_height=480
 
+[global_group]
+
+Inventoryy=""
+
 [input]
 
 esquerda={

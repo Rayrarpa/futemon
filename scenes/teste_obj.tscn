@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dsaobkia0n4j" path="res://person/bush.tscn" id="10_rm7ra"]
 [ext_resource type="PackedScene" uid="uid://dhuw5npy0udy7" path="res://person/player.tscn" id="11_0mof3"]
 [ext_resource type="PackedScene" uid="uid://xebp7gqm6ufl" path="res://scenes/menu.tscn" id="12_jpxu0"]
+[ext_resource type="PackedScene" uid="uid://cowkk0ukxb8fl" path="res://scenes/Inventory.tscn" id="13_t2yaw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ijdc7"]
 texture = ExtResource("1_w0l6o")
@@ -1277,3 +1278,5 @@ position = Vector2(-407.00003, 520.99994)
 scale = Vector2(2.5, 2.5)
 
 [node name="Menu" parent="." unique_id=342042241 instance=ExtResource("12_jpxu0")]
+
+[node name="CanvasLayer" parent="." unique_id=1132434581 instance=ExtResource("13_t2yaw")]
