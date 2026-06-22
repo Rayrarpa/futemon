@@ -16,6 +16,12 @@ func _unhandled_input(event):
 	match screen_loaded:
 		ScreenLoaded.NOTHING:
 			if event.is_action_pressed("menu"):
+				var player = get_tree().get_first_node_in_group("player")
+				
+				if !player.moving:
+					player.set_process(false)
+					menu.visible = true
+					screen_loaded = ScreenLoaded.JUST_MENU
 				menu.visible = true
 				screen_loaded = ScreenLoaded.JUST_MENU
 				selected_option = 0
@@ -24,6 +30,8 @@ func _unhandled_input(event):
 		
 		ScreenLoaded.JUST_MENU:
 			if event.is_action_pressed("ataque") or event.is_action_pressed("menu"):
+				var player = get_tree().get_first_node_in_group("player")
+				player.set_process(true)
 				menu.visible = false
 				screen_loaded = ScreenLoaded.NOTHING
 				selected_option = 0
