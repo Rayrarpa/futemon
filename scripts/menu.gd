@@ -31,13 +31,15 @@ func _unhandled_input(event):
 				
 		
 		ScreenLoaded.JUST_MENU:
-			if event.is_action_pressed("menu"):
+			if event.is_action_pressed("menu") or event.is_action_pressed("voltar"):
 				var player = get_tree().get_first_node_in_group("player")
 				player.set_process(true)
 				menu.visible = false
 				screen_loaded = ScreenLoaded.NOTHING
 				selected_option = 0
-			elif event.is_action_pressed("ataque") and select_arrow.position.y == 5:
+			elif event.is_action_pressed("ataque") and select_arrow.position.y == 82:
+				var inventory = get_tree().get_first_node_in_group("Inventory")
+				inventory.get_node("Control").visible = true
 				screen_loaded = ScreenLoaded.PARTY_SCREEN
 			elif event.is_action_pressed("down"):
 				selected_option += 1
@@ -60,7 +62,11 @@ func _unhandled_input(event):
 				arrow_inv.position.y += 54
 			elif event.is_action_pressed("up"):
 				arrow_inv.position.y -= 54
-			if event.is_action_pressed("voltar"):
-				inventory.visible = false
+			elif event.is_action_pressed("right"):
+				arrow_inv.position.x += 54
+			elif event.is_action_pressed("left"):
+				arrow_inv.position.x -= 54
+			elif event.is_action_pressed("voltar"):
+				inventory.get_node("Control").visible = false
 				select_arrow.visible = true
 				screen_loaded = ScreenLoaded.JUST_MENU

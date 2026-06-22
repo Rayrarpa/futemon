@@ -4,7 +4,7 @@ var VELOCIDADE = 200
 
 var situationAtual = "idle"
 
-const title_size = 32
+const title_size = 16
 var moving = false
 var input_dir
 var podeAndar = 1
