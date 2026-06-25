@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chqootgrbhc8t"
-path="res://.godot/imported/EscolaWIP.png-240557c19edd4a4aefb4f44b900ee59f.ctex"
+uid="uid://cdl3otyfqs0u6"
+path="res://.godot/imported/chaoCasa.png-f4d440b6f2f29542a5b1f09d2d8691fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EscolaWIP.png"
-dest_files=["res://.godot/imported/EscolaWIP.png-240557c19edd4a4aefb4f44b900ee59f.ctex"]
+source_file="res://sprites/Cenario/chaoCasa.png"
+dest_files=["res://.godot/imported/chaoCasa.png-f4d440b6f2f29542a5b1f09d2d8691fc.ctex"]
 
 [params]
 
