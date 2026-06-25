@@ -6,6 +6,10 @@ var moving = false
 var input_dir
 var podeAndar = 1
 var matos = []
+var porta_proxima = null
+var interagindo = false
+var cena_destino = ""
+
 
 func _ready():
 	randomize()
@@ -26,9 +30,29 @@ func tentar_encontro():
 			SceneTransition.change_scene("res://scenes/battle.tscn")
 			return
 
+func interagir_com_porta():
+	interagindo = true
+	podeAndar = 0
+	
+	porta_proxima.abrir_porta()
+	
+	# Muda frame da CasaWip pra porta aberta (frame 1, por exemplo)
+	var casa = porta_proxima.get_parent() # ajuste o frame da porta aberta
+	
+	# Aguarda um pouquinho pra mostrar a porta aberta
+	await get_tree().create_timer(0.3).timeout
+	
+	# Fade out e troca de cena
+	SceneTransition.change_scene(cena_destino)
+
+
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("sair"):
 		get_tree().change_scene_to_file("res://scenes/menu_start.tscn")
+	
+	if Input.is_action_just_pressed("ataque") and porta_proxima != null and not interagindo:
+		interagir_com_porta()
+	
 	if podeAndar == 1:
 		if moving:
 			return
