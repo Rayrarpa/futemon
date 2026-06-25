@@ -168,7 +168,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4cgrj"]
-size = Vector2(8, 13)
+size = Vector2(6, 6.5)
 
 [node name="player" type="CharacterBody2D" unique_id=1550785553 groups=["player"]]
 script = ExtResource("1_hi1in")
@@ -181,7 +181,7 @@ sprite_frames = SubResource("SpriteFrames_kw35o")
 animation = &"runB"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1747656750]
-position = Vector2(0, 0.5)
+position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_4cgrj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1201360535]

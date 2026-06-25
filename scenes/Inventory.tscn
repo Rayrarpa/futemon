@@ -17,10 +17,11 @@ offset_bottom = 40.0
 [node name="NinePatchRect" type="NinePatchRect" parent="Control" unique_id=485910287]
 texture_filter = 1
 layout_mode = 0
-offset_left = 169.0
-offset_top = 39.0
-offset_right = 405.0
-offset_bottom = 275.0
+offset_left = 72.0
+offset_top = 43.0
+offset_right = 308.0
+offset_bottom = 279.0
+scale = Vector2(2.0763886, 1.5571222)
 texture = ExtResource("1_kh8if")
 region_rect = Rect2(27.569416, -0.19333744, 75.64844, 74.93241)
 
