@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://bm2q5pbxrtrq3" path="res://scenes/casa.tscn" id="8_1tng7"]
 [ext_resource type="PackedScene" uid="uid://dhuw5npy0udy7" path="res://person/player.tscn" id="9_o3lnv"]
 [ext_resource type="PackedScene" uid="uid://dsaobkia0n4j" path="res://person/bush.tscn" id="10_1tng7"]
+[ext_resource type="PackedScene" uid="uid://xebp7gqm6ufl" path="res://scenes/menu.tscn" id="11_4qysm"]
+[ext_resource type="PackedScene" uid="uid://cowkk0ukxb8fl" path="res://scenes/Inventory.tscn" id="12_74fkb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6kl1"]
 texture = ExtResource("1_p5lnq")
@@ -285,6 +287,10 @@ zoom = Vector2(4, 4)
 limit_enabled = false
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
+
+[node name="Menu" parent="player" unique_id=342042241 instance=ExtResource("11_4qysm")]
+
+[node name="CanvasLayer" parent="player" unique_id=1132434581 instance=ExtResource("12_74fkb")]
 
 [node name="Bush" parent="." unique_id=1769287671 instance=ExtResource("10_1tng7")]
 position = Vector2(1051, 650)
