@@ -183,11 +183,3 @@ animation = &"runB"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1747656750]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_4cgrj")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1201360535]
-rotation = -0.5014508
-skew = 1.569051
-zoom = Vector2(4, 4)
-limit_enabled = false
-position_smoothing_enabled = true
-position_smoothing_speed = 8.0

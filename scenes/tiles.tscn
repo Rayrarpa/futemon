@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dhuw5npy0udy7" path="res://person/player.tscn" id="9_o3lnv"]
 [ext_resource type="PackedScene" uid="uid://dsaobkia0n4j" path="res://person/bush.tscn" id="10_1tng7"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o3lnv"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6kl1"]
 texture = ExtResource("1_p5lnq")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
@@ -25,7 +25,7 @@ texture_region_size = Vector2i(96, 96)
 1:2/0 = 0
 2:2/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74fkb"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fntdg"]
 texture = ExtResource("2_c1tb5")
 texture_region_size = Vector2i(192, 192)
 0:0/0 = 0
@@ -33,7 +33,7 @@ texture_region_size = Vector2i(192, 192)
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yafrn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4qysm"]
 texture = ExtResource("3_o3lnv")
 texture_region_size = Vector2i(288, 288)
 1:0/0 = 0
@@ -47,7 +47,7 @@ texture_region_size = Vector2i(288, 288)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48, -48, 48, -48, 48, 48, -48, 48)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vsyic"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74fkb"]
 texture = ExtResource("4_o6kl1")
 texture_region_size = Vector2i(96, 96)
 2:2/0 = 0
@@ -151,12 +151,12 @@ texture_region_size = Vector2i(96, 96)
 9:0/0 = 0
 9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48, -48, 48, -48, 48, 48, -48, 48)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1tng7"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yafrn"]
 texture = ExtResource("1_1g8qg")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6kl1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vsyic"]
 texture = ExtResource("3_ddpu7")
 texture_region_size = Vector2i(96, 96)
 1:0/0 = 0
@@ -173,7 +173,7 @@ texture_region_size = Vector2i(96, 96)
 2:3/0 = 0
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fntdg"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_crvj2"]
 texture = ExtResource("4_exfrf")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
@@ -186,7 +186,7 @@ texture_region_size = Vector2i(96, 96)
 1:2/0 = 0
 2:2/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4qysm"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2pkoj"]
 texture = ExtResource("5_c1tb5")
 texture_region_size = Vector2i(96, 96)
 1:0/0 = 0
@@ -205,14 +205,14 @@ texture_region_size = Vector2i(96, 96)
 [sub_resource type="TileSet" id="TileSet_74fkb"]
 tile_size = Vector2i(96, 96)
 physics_layer_0/collision_layer = 1
-sources/6 = SubResource("TileSetAtlasSource_1tng7")
-sources/7 = SubResource("TileSetAtlasSource_o6kl1")
-sources/8 = SubResource("TileSetAtlasSource_fntdg")
-sources/9 = SubResource("TileSetAtlasSource_4qysm")
-sources/10 = SubResource("TileSetAtlasSource_o3lnv")
-sources/11 = SubResource("TileSetAtlasSource_74fkb")
-sources/12 = SubResource("TileSetAtlasSource_yafrn")
-sources/15 = SubResource("TileSetAtlasSource_vsyic")
+sources/6 = SubResource("TileSetAtlasSource_yafrn")
+sources/7 = SubResource("TileSetAtlasSource_vsyic")
+sources/8 = SubResource("TileSetAtlasSource_crvj2")
+sources/9 = SubResource("TileSetAtlasSource_2pkoj")
+sources/10 = SubResource("TileSetAtlasSource_o6kl1")
+sources/11 = SubResource("TileSetAtlasSource_fntdg")
+sources/12 = SubResource("TileSetAtlasSource_4qysm")
+sources/15 = SubResource("TileSetAtlasSource_74fkb")
 
 [node name="Tiles" type="Node2D" unique_id=1814617504]
 
@@ -269,11 +269,22 @@ tile_set = SubResource("TileSet_74fkb")
 
 [node name="Casa" parent="." unique_id=1167718415 instance=ExtResource("8_1tng7")]
 position = Vector2(583, 396)
+cena_destino = "res://scenes/Dentro.tscn"
 
 [node name="player" parent="." unique_id=1550785553 instance=ExtResource("9_o3lnv")]
 z_index = 1000
 position = Vector2(837, 686)
 scale = Vector2(1.5, 1.5)
+
+[node name="Camera2D2" type="Camera2D" parent="player" unique_id=1516178340]
+position = Vector2(0.6525879, 2.0007782)
+rotation = -0.5014508
+scale = Vector2(0.6666667, 0.6666667)
+skew = 1.5690356
+zoom = Vector2(4, 4)
+limit_enabled = false
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
 
 [node name="Bush" parent="." unique_id=1769287671 instance=ExtResource("10_1tng7")]
 position = Vector2(1051, 650)
